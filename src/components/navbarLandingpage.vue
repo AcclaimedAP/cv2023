@@ -29,8 +29,8 @@ nav {
         flex-direction: row;
         flex-wrap: nowrap;
         li {
-            margin: 5%;
             text-align: center;
+            transform: translateX(-50%);
             text-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.5);
             display: inline-block;
             position: relative;
