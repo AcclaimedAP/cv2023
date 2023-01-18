@@ -2,14 +2,14 @@
 import lines from './shimmerLine.vue';
 
 export default {
-    components: {
-        lines,
-    },
-    data() {
-        return {
-            amount: 72,
-        };
-    },
+  components: {
+    lines,
+  },
+  data() {
+    return {
+      amount: 72,
+    };
+  },
 
 };
 </script>
