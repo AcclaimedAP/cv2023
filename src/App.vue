@@ -1,5 +1,5 @@
 <script setup>
-import content from './components/ContextText.vue';
+// import content from './components/ContextText.vue';
 import circleShimmer from './components/circleShimmer.vue';
 </script>
 
