@@ -2,7 +2,7 @@
 // import content from './components/ContextText.vue';
 import circleShimmer from './components/circleShimmer.vue';
 import background from './components/backgroundImage.vue';
-
+import navbar from './components/navbarLandingpage.vue';
 /*
 
 */
@@ -11,6 +11,7 @@ import background from './components/backgroundImage.vue';
 <template>
   <div class="background">
     <background />
+    <navbar />
   <circleShimmer class="circleShimmer" />
   </div>
 </template>
