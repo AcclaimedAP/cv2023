@@ -34,7 +34,7 @@ div {
     transition: all 1s ease-out;
     width: 100vh;
     height: 100vh;
-    background-color: rgb(30, 30, 130, 0);
+    background-color: rgba(255, 255, 255, 0);
     margin: 0;
     position: relative;
     @for $i from 1 through 72 {
