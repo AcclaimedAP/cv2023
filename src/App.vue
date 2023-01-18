@@ -10,6 +10,5 @@ import circleShimmer from './components/circleShimmer.vue';
 <style scoped>
 .circleShimmer {
   margin: auto;
-
 }
 </style>
