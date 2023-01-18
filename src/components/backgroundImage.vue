@@ -6,7 +6,7 @@ function followMouse(e) {
   const x = `${(e.clientX * 5) / window.innerWidth}%`;
   const y = `${(e.clientY * 5) / window.innerHeight}%`;
 
-  for (let i = 0; i < 2; i += 1) {
+  for (let i = 0; i < background.length; i += 1) {
     background[i].style.left = x;
     background[i].style.top = y;
   }
