@@ -29,16 +29,26 @@ export default {
         opacity: 1;
     }
 }
+@keyframes rotate{
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(-30deg);
+  }
+}
 div {
-    animation: 3s ease-out 0s 1 fadeIn;
+    transform-origin: center middle;
     transition: all 1s ease-out;
     width: 100vh;
     height: 100vh;
     background-color: rgba(255, 255, 255, 0);
     margin: 0;
     position: relative;
+    animation: 5s ease-out 0s 1 rotate forwards;
     @for $i from 1 through 72 {
         .lines:nth-child(#{$i}){
+              animation: calc(0.6s + $i * 0.1s) ease-out 0s 1 fadeIn;
             transform: rotate(calc(5deg * $i));
         }
     }
