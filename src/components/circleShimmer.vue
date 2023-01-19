@@ -34,7 +34,7 @@ export default {
     transform: rotate(0);
   }
   100% {
-    transform: rotate(-30deg);
+    transform: rotate(-720deg);
   }
 }
 div {
@@ -45,10 +45,11 @@ div {
     background-color: rgba(255, 255, 255, 0);
     margin: 0;
     position: relative;
-    animation: 5s ease-out 0s 1 rotate forwards;
+    animation: 48s ease-out 0s 1 rotate forwards;
     @for $i from 1 through 72 {
         .lines:nth-child(#{$i}){
-              animation: calc(0.6s + $i * 0.1s) ease-out 0s 1 fadeIn;
+          opacity: 0;
+              animation: 1s ease-in calc(0.1s + $i * 0.1s) 1 fadeIn forwards;
             transform: rotate(calc(5deg * $i));
         }
     }
