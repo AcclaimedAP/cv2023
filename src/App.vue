@@ -3,15 +3,16 @@
 import circleShimmer from './components/circleShimmer.vue';
 import background from './components/backgroundImage.vue';
 import navbar from './components/navbarLandingpage.vue';
-/*
 
-*/
+function test(x) {
+  console.log(x);
+}
 </script>
 
 <template>
   <div class="background">
     <background />
-    <navbar />
+    <navbar @location="test"/>
   <circleShimmer class="circleShimmer" />
   </div>
 </template>

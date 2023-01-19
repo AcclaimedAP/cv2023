@@ -1,27 +1,44 @@
 <script>
-
+export default {
+  props: {
+    locationProp: String,
+  },
+  methods: {
+    menuEvent(location) {
+      this.$emit('location', location);
+    },
+  },
+};
 </script>
 
 <template>
 <nav>
     <ul>
-        <li>About Me</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li @click="menuEvent('projects')">Projects</li>
+        <li @click="menuEvent('contact')">Contact</li>
+        <li @click="menuEvent('about')">About Me</li>
     </ul>
 </nav>
 </template>
 
 <style scoped lang="scss">
+$startPercent: 100%;
+@keyframes moveDown {
+    0% {
+        top: $startPercent;
+    } 100% {
+        top: 93%;
+    }
+}
 nav {
     z-index: 100;
     position: fixed;
-    top: 60%;
+    top: $startPercent;
     left: 50%;
     font-size: 1.6em;
     width: 80vh;
     transform: translateX(-50%);
-
+    animation: moveDown 3s ease-in-out 0s 1 forwards;
     ul{
         list-style: none;
         display: flex;

@@ -40,8 +40,8 @@ export default {
 div {
     transform-origin: center middle;
     transition: all 1s ease-out;
-    width: 100vh;
-    height: 100vh;
+    width: 95vh;
+    height: 95vh;
     background-color: rgba(255, 255, 255, 0);
     margin: 0;
     position: relative;
