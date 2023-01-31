@@ -22,7 +22,7 @@ export default {
 
 <style scoped lang="scss">
 div {
-width: 100%;
+width: calc(100% - 60px);
 margin: 30px;
 h2 {
     margin: 16px;
