@@ -27,6 +27,7 @@ export default {
     }
     100% {
         opacity: 1;
+
     }
 }
 @keyframes rotate{
@@ -34,7 +35,7 @@ export default {
     transform: rotate(0);
   }
   100% {
-    transform: rotate(-720deg);
+    transform: rotate(-40deg);
   }
 }
 div {
@@ -45,11 +46,11 @@ div {
     background-color: rgba(255, 255, 255, 0);
     margin: 0;
     position: relative;
-    animation: 48s ease-out 0s 1 rotate forwards;
+    animation: 3s ease-out 0s 1 rotate forwards;
     @for $i from 1 through 72 {
         .lines:nth-child(#{$i}){
           opacity: 0;
-              animation: 1s ease-in calc(0.1s + $i * 0.1s) 1 fadeIn forwards;
+              animation: 1s ease-in calc(0.1s + $i * 0.03s) 1 fadeIn forwards;
             transform: rotate(calc(5deg * $i));
         }
     }

@@ -1,19 +1,33 @@
 <script setup>
-// import content from './components/ContextText.vue';
+import { reactive } from 'vue';
 import circleShimmer from './components/circleShimmer.vue';
 import background from './components/backgroundImage.vue';
 import navbar from './components/navbarLandingpage.vue';
+import projects from './components/contentProjects.vue';
+import contact from './components/contentContact.vue';
+import about from './components/contentAbout.vue';
 
-function test(x) {
-  console.log(x);
+const state = reactive({ content: "" })
+
+
+
+function changeContent(cxt) {
+  if(state.content != cxt){
+    state.content = cxt;
+  } else {
+    state.content = "";
+  }
 }
 </script>
 
 <template>
   <div class="background">
     <background />
-    <navbar @location="test"/>
+    <navbar @location="changeContent"/>
   <circleShimmer class="circleShimmer" />
+    <projects v-if="state.content === 'projects'"/>
+    <contact v-if="state.content === 'contact'" />
+    <about v-if="state.content === 'about'" />
   </div>
 </template>
 

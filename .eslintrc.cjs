@@ -6,6 +6,7 @@ module.exports = {
   extends: [
     'plugin:vue/vue3-essential',
     'airbnb-base',
+    'prettier',
   ],
   overrides: [
   ],
@@ -15,9 +16,10 @@ module.exports = {
   },
   plugins: [
     'vue',
+    'prettier',
   ],
   rules: {
     'linebreak-style': 'off',
-    indent: ['error', 2],
+    'prettier/prettier': 2,
   },
 };

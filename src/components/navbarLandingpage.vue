@@ -1,4 +1,5 @@
 <script>
+
 export default {
   props: {
     locationProp: String,
@@ -14,9 +15,9 @@ export default {
 <template>
 <nav>
     <ul>
-        <li @click="menuEvent('projects')">Projects</li>
-        <li @click="menuEvent('contact')">Contact</li>
-        <li @click="menuEvent('about')">About Me</li>
+        <li @click="menuEvent('projects')">Projekt</li>
+        <li @click="menuEvent('contact')">Kontakta mig</li>
+        <li @click="menuEvent('about')">Om mig</li>
     </ul>
 </nav>
 </template>
