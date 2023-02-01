@@ -1,5 +1,5 @@
 <script>
-import content from './titleTextLinkComponent.vue';
+import contact from './contactComponent.vue';
 
 export default {
     components: {
@@ -10,12 +10,9 @@ export default {
 
 <template>
 <div class="container">
-<h1>Projekt</h1>
+<h1>Kontakta mig</h1>
+<contact link="https://github.com/AcclaimedAP" linktext="Github"/>
 
-<content title="Test title" 
-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi laudantium quia reprehenderit, harum perferendis, laborum ratione expedita veniam nihil numquam molestias distinctio at quae? Quisquam omnis quo iusto esse non!" 
-link="github.com" 
-linktext=""/>
 </div>
 
 </template>
