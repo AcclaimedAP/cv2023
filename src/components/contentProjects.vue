@@ -19,7 +19,7 @@ linktext="Du kan se repot här!"/>
 <content title="Idle inkrementellt auto-battler spel" 
 text="Större projekt som är ett auto-spelande spel. Byggt för ett skolprojekt i vår Javascript kurs. Poängen är att komma så långt som möjligt genom att uppgradera sig själv. Den använder sig mycket av timers och animationer. Till en början var den endast byggt med VanillaJS, men sedan justerad för att till en del använda sig av Typescript, men pga. den inte var byggt med Typescript i åtanke från början är denna del av projektet svagt. Utöver det är all grafik gjord av mig i Inkscape. I framtiden hoppas jag att bygga om detta projekt med mer omtanke." 
 link="https://github.com/AcclaimedAP/Incremential-Game-Project" 
-linktext="Länk till repot här."/>
+linktext="Länk till repot här." image="../src/assets/img/projects/incremential-game.jpg" imageAltText="Incremential game screenshot"/>
 
 <content title="Gymnasiearbete - Spel i Unity" 
 text="Enkelt spel gjort i Unity för mitt Gymnasiearbete. Man tar kontroll över en tunna, som ska ta sig i mål så snabbt som möjligt över olika hinder. Finns även poäng att samla för den som vill. Jag använde mig av Blender för att skapa spelmodellen, och sedan använt de resurser i Unity för att skapa de andra tillgångarna. Spelet är programmerat i C#, och målet med gymnasiearbetet är att utforska hur lite som krävs för att skapa spel i dagsläget. Svaret är, inte mycket." 
