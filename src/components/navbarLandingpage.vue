@@ -23,11 +23,13 @@ export default {
 </template>
 
 <style scoped lang="scss">
-$startPercent: 100%;
+$startPercent: 96%;
 @keyframes moveDown {
     0% {
+        opacity: 0;
         top: $startPercent;
     } 100% {
+        opacity: 1;
         top: 93%;
     }
 }
@@ -48,7 +50,6 @@ nav {
         flex-wrap: nowrap;
         li {
             text-align: center;
-            transform: translateX(-50%);
             text-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.5);
             display: inline-block;
             position: relative;

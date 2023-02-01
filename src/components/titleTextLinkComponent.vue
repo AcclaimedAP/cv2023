@@ -39,7 +39,6 @@ export default {
 <style scoped lang="scss">
 img{
     width: 300px;
-    aspect-ratio: 16/9;
     height: auto;
     margin: 10px;
 }
@@ -49,6 +48,7 @@ margin: 30px;
 h2 {
     margin: 16px;
     display: inline;
+    line-height: 2.5rem;
 }
 p {
     display: inline;

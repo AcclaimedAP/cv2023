@@ -40,7 +40,4 @@ function changeContent(cxt) {
   margin: 0;
 }
 
-.circleShimmer {
-  margin: auto;
-}
 </style>

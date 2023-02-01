@@ -44,9 +44,10 @@ div {
     width: 95vh;
     height: 95vh;
     background-color: rgba(255, 255, 255, 0);
-    margin: 0;
-    position: relative;
-    animation: 3s ease-out 0s 1 rotate forwards;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    // animation: 3s ease-out 0s 1 rotate forwards;
     @for $i from 1 through 72 {
         .lines:nth-child(#{$i}){
           opacity: 0;
