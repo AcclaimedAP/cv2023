@@ -8,5 +8,5 @@ Du kan alltid nå mig här på Github @AcclaimedAP, annars finns jag över mejl 
 ### Todo
 
 Klargöra initiellt innehåll.  
-Lägg till bilder för projekt.  
+✔️Lägg till bilder för projekt.  
 Animationer för content.
