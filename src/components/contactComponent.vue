@@ -23,7 +23,7 @@ export default {
 </script>
 
 <template>
-<div class="flex">
+<div class="contactContainer">
     <img v-if="image" v-bind="imageAttributes">
     <h2><a v-if="linktext && link" v-bind:href="link">{{ linktext }}</a>
     <a v-else-if="link && !linktext" v-bind:href="link">{{ link }}</a></h2>
@@ -33,23 +33,21 @@ export default {
 
 <style scoped lang="scss">
 img{
-    width: 300px;
+    width: 150px;
     height: auto;
-    margin: 10px;
 }
 div {
-width: calc(100% - 60px);
 margin: 30px;
+width: 150px;
+
 h2 {
     margin: 16px;
-    display: inline;
     line-height: 2.5rem;
 }
-p {
-    display: inline;
-    line-height: 1.7rem;
-}
 a {
+    display: block;
+    text-align: center;
+    width: 100%;
     text-decoration: none;
     color: $yellow;
     &:hover {

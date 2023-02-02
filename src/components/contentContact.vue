@@ -3,7 +3,7 @@ import contact from './contactComponent.vue';
 
 export default {
     components: {
-        content,
+        contact,
     }
 }
 </script>
@@ -11,7 +11,8 @@ export default {
 <template>
 <div class="container">
 <h1>Kontakta mig</h1>
-<contact link="https://github.com/AcclaimedAP" linktext="Github"/>
+<contact link="https://github.com/AcclaimedAP" linktext="Github"
+image="../src/assets/img/contact/github-mark-white.svg" imageAltText="Github Logo"/>
 
 </div>
 
