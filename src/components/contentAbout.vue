@@ -4,6 +4,20 @@ import skill from './skillsContainer.vue';
 export default {
     components: {
         skill
+    },
+    data() {
+        return {
+            skills: [
+                {
+                    name: "CSS3 & SCSS",
+                    info: "Kunskap om CSS3 samt SCSS och dess funktionalitet så som funktioner, variablar, loopar, arrayer, mm."
+                },
+                {
+                    name: "Javascript",
+                    info: "Djup förståelse av språkets grunder. Funktioner, loopar, objekt, klasser, mm."
+                }
+            ]
+        }
     }
 }
 </script>
@@ -27,7 +41,7 @@ export default {
     <div class="separator"></div>
     <div class="flex-child right-content">
         <h2>Mina kunskaper</h2>
-        <skill name="CSS3 & SCSS" info="Kunskap om CSS3 samt SCSS och dess funktionalitet så som funktioner, variablar, loopar, arrayer, mm."/>
+        <skill v-for="skill in skills" :name="skill.name" :info="skill.info"/>
     </div>
 </div>
 
@@ -59,9 +73,10 @@ export default {
     align-content: flex-start;
     align-items: stretch;
     height: 100%;
-    overflow: scroll;
+
     box-shadow: 0 0 30px rgba($black, 0.8) inset;
     .flex-child {
+        overflow: scroll;
         min-height: 100%;
         h2, h3 {
             text-align: center;
