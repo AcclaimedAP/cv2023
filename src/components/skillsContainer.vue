@@ -20,12 +20,24 @@ export default {
 
 <template>
 <details>
-    <summary><img v-if="icon" v-bind="imageAttributes" />{{ name }}</summary>
+    <summary>
+        <img v-if="icon" v-bind="imageAttributes" />
+        {{ name }}
+    </summary>
     <p>{{ info }}</p>
 </details>
 </template>
 
 <style scoped lang="scss">
+img {
+    height: 30px;
+    width: 30px;
+    transform: translate(-16px, 6px);
+
+    position: relative;
+    display: inline-block;
+}
+
 @keyframes details-show {
   0% {
     margin-bottom: -30%;
@@ -38,12 +50,14 @@ export default {
   }
 }
 details {
+    margin-bottom: 6px;
     background-color: rgba($white, 0.05);
     text-align: center;
     overflow: hidden;
     height: auto;
     z-index: 1;
     line-height: 36px;
+
     p {
         margin: 0;
     }
@@ -56,9 +70,9 @@ details {
         z-index: 10;
         position: relative;
         cursor: pointer;
-        &::before {
-
-        }
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        transition: all 0.2s;
         &::after {
             content: '';
             border-right: 4px solid;
@@ -82,7 +96,7 @@ details[open] > summary::after {
   transform: rotate(-135deg);
 }
 details > *:not(summary) {
-  animation: details-show 1s ease-in-out;
+  animation: details-show 0.4s ease-in-out;
   position: relative;
   z-index: 1;
   transition: all 0.3s ease-in-out;
