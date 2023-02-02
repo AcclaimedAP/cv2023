@@ -10,3 +10,4 @@ Du kan alltid nå mig här på Github @AcclaimedAP, annars finns jag över mejl 
 Klargöra initiellt innehåll.  
 ✔️Lägg till bilder för projekt.  
 Animationer för content.
+Sortera kunskapslista
