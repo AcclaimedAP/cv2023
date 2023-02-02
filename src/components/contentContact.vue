@@ -23,6 +23,10 @@ export default {
         <contact text="Acclaimed#5648"
         image="../src/assets/img/contact/discord-mark-white.svg" 
         imageAltText="Discord logo"/>
+        <contact link="https://www.linkedin.com/in/alexander-pressfelt-559754145/" 
+        linktext="LinkedIn"
+        image="../src/assets/img/contact/linkedin-svgrepo-com.svg" 
+        imageAltText="LinkedIn Logo"/>
     </div>
 </div>
 

@@ -41,6 +41,7 @@ img{
     top: 40px;
     left: 50%;
     transform: translateX(-50%);
+    
 }
 div {
 margin: 30px;

@@ -1,21 +1,36 @@
 <script>
-import content from './titleTextLinkComponent.vue';
+import skill from './skillsContainer.vue';
 
 export default {
     components: {
-        content,
+        skill
     }
 }
 </script>
 
 <template>
 <div class="container">
-<h1>Projekt</h1>
+<div class="flex-container">
+    <div class="flex-child left-content">
+        <h2>Min bakgrund</h2>
+        <h3>Studier</h3>
+        <p>Idag studerar jag till Front-end utvecklare på Medieinstitutet. Jag började där i oktober 2022, och under denna studietid har vi studerat och lärt oss använda Git & Github, HTML5, CSS & SCSS, Javascript, Vue, E2E testning, och Design & Gränssnitt. När jag påbörjar min LIA ska vi även ha studerat och lärt oss om React, UX & Usability, API-utveckling, Arbetsmetodik, och agilt.</p>
+        <p>Innan mina studier hos Medieinstituet läste jag även IT relaterade ämnen på gymnasiet, inkluderat Datortektik, CAD, C#/C++ programmering, och Administration av nätverks- och serverutrustning.</p>
+        <p>Inte direkt relaterat till studier, men jag har flera års arbetserfarenhet inom detaljhandel, samt inom resturang som bland annat handledare.</p>
+        <h3>Ambitioner</h3>
+        <p>Ända sedan jag var 10 år har jag varit intresserad av att skapa. När jag var så liten gjorde jag min första hemsida i html och css. Kanske inte den mest imponerande sidan, men det väkte en glöd i mig att det var något jag ville fortsätta med. Under mina år har jag testat på flera olika riktningar i livet så som resturang, spelprogrammering, detaljhandel, mm. och har stält mig in på att min första känsla var korrekt. Jag ser varje dag efram emot att lära mig nya saker inom webbutveckling. Nya ramverk, metodiker, och teknologin bakom allt. Jag är otroligt nyfiken av mig att utöka mina kunskaper.</p>
+        <h3>Fritid</h3>
+        <p>Jag har ett flertal hobbies. Jag sitter gärna och spelar datorspel. Detta brukar vara League of Legends, Celeste, Oxygen Not Included, och vad jag känner för just då.</p>
+        <p>Förutom spel så har jag även prövat på att DJa. Jag äger en fin Pioneer DDJ-SR controller som jag använder emellanåt när jag fastnar på något problem, man kan säga det får min hjärna att snurra.</p>
+        <p>Jag har även haft ett stort intresse för Japan, och har studerat japanska på gymnasiet(så långt det går) och sedan på fritiden. Det är väldigt svårt så det står lite stilla nu, men jag tycker språk generellt är intressant så jag hoppas att jag en dag kan lära mig ett fleral andra språk också!</p>
+    </div>
+    <div class="separator"></div>
+    <div class="flex-child right-content">
+        <h2>Mina kunskaper</h2>
+        <skill name="CSS3 & SCSS" info="Kunskap om CSS3 samt SCSS och dess funktionalitet så som funktioner, variablar, loopar, arrayer, mm."/>
+    </div>
+</div>
 
-<content title="Test title" 
-text="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi laudantium quia reprehenderit, harum perferendis, laborum ratione expedita veniam nihil numquam molestias distinctio at quae? Quisquam omnis quo iusto esse non!" 
-link="github.com" 
-linktext=""/>
 </div>
 
 </template>
@@ -33,9 +48,43 @@ linktext=""/>
     z-index: 10;
 
     h1 {
+        min-width: 100%;
         text-align: center;
         margin-top: 30px;
         margin-bottom: 20px;
+    }
+    .flex-container{
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: stretch;
+    height: 100%;
+    overflow: scroll;
+    box-shadow: 0 0 30px rgba($black, 0.8) inset;
+    .flex-child {
+        min-height: 100%;
+        h2, h3 {
+            text-align: center;
+        }
+        p {
+            margin: 16px;
+            line-height: 1.7rem;
+        }
+    }
+    .separator {
+        min-width: 1px;
+        max-width: 1px;
+        background-color: rgba($white, 0.5);
+        height: 100%;
+    }
+    .left-content {
+        flex-shrink: 1;
+    }
+    .right-content {
+        min-width: 40%;
+        flex-grow: 1.6;
+        flex-shrink: 1.6;
+    }
     }
 }
 </style>
