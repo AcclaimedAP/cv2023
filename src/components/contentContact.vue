@@ -11,9 +11,19 @@ export default {
 <template>
 <div class="container">
 <h1>Kontakta mig</h1>
-<contact link="https://github.com/AcclaimedAP" linktext="Github"
-image="../src/assets/img/contact/github-mark-white.svg" imageAltText="Github Logo"/>
-
+    <div class="contacts">
+        <contact link="https://github.com/AcclaimedAP" 
+        linktext="Github"
+        image="../src/assets/img/contact/github-mark-white.svg" 
+        imageAltText="Github Logo"/>
+        <contact link="mailto:alexander.pressfelt@medieinstitutet.se" 
+        linktext="E-Mail"
+        image="../src/assets/img/contact/mail-white.svg" 
+        imageAltText="Mail icon"/>
+        <contact text="Acclaimed#5648"
+        image="../src/assets/img/contact/discord-mark-white.svg" 
+        imageAltText="Discord logo"/>
+    </div>
 </div>
 
 </template>
@@ -29,7 +39,11 @@ image="../src/assets/img/contact/github-mark-white.svg" imageAltText="Github Log
     top: 10vh;
     left: 10vw;
     z-index: 10;
-
+    .contacts {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
     h1 {
         text-align: center;
         margin-top: 30px;

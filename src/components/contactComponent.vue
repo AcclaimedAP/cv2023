@@ -8,6 +8,7 @@ export default {
         imageAltText: { type: String, default: "Project image"},
         imgW: { type: Number, default: 200},
         imgH: { type: Number, default: 170 },
+        text: String
     },
     data() {
         return {
@@ -25,9 +26,10 @@ export default {
 <template>
 <div class="contactContainer">
     <img v-if="image" v-bind="imageAttributes">
-    <h2><a v-if="linktext && link" v-bind:href="link">{{ linktext }}</a>
-    <a v-else-if="link && !linktext" v-bind:href="link">{{ link }}</a></h2>
-
+    <h2 v-if="link"><a v-if="linktext && link" v-bind:href="link">{{ linktext }}</a>
+    <a v-else v-bind:href="link">{{ link }}</a>
+    </h2>
+    <h2 v-else>{{ text }}</h2>
 </div>
 </template>
 
@@ -35,14 +37,34 @@ export default {
 img{
     width: 150px;
     height: auto;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 div {
 margin: 30px;
 width: 150px;
+height: 200px;
+padding: 50px;
+padding-bottom: 10px;
+border: 1px solid rgba($white, 0.5);
+background-color: rgba($white, 0.02);
+position: relative;
+transition: all 0.6s;
+
+&:hover {
+    background-color: rgba($white, 0.07);
+    box-shadow: 0px 0px 10px rgba($white, 0.3);
+}
 
 h2 {
-    margin: 16px;
+
     line-height: 2.5rem;
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
 }
 a {
     display: block;
