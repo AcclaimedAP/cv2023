@@ -1,13 +1,7 @@
 <script>
 import skill from './skillsContainer.vue';
 
-export default {
-    components: {
-        skill
-    },
-    data() {
-        return {
-            skills: [
+const skills = [
                 {
                     name: "CSS3 & SCSS",
                     info: "Kunskap om CSS3 samt SCSS och dess funktionalitet så som funktioner, variablar, loopar, arrayer, mm.",
@@ -33,9 +27,16 @@ export default {
                     alt: "vite logo"
                 }
             ]
-        }
-
+export default {
+    components: {
+        skill
     },
+    computed: {
+        sortedSkills() {
+            return skills
+                .sort((a, b) => (a.name) > (b.name) ? 1 : -1);
+        }
+    }
 
 }
 </script>
@@ -59,7 +60,7 @@ export default {
     <div class="separator"></div>
     <div class="flex-child right-content">
         <h2>Mina kunskaper</h2>
-        <skill v-for="skill in skills" :name="skill.name" :info="skill.info" :icon="skill.icon" :alt="skill.alt"/>
+        <skill v-for="skill in sortedSkills" :name="skill.name" :info="skill.info" :icon="skill.icon" :alt="skill.alt"/>
     </div>
 </div>
 

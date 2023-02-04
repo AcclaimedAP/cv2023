@@ -38,17 +38,6 @@ img {
     display: inline-block;
 }
 
-@keyframes details-show {
-  0% {
-    margin-bottom: -30%;
-    opacity: 0;
-
-  } 100% {
-    margin-bottom: 0;
-    opacity: 1;
-
-  }
-}
 details {
     margin-bottom: 6px;
     background-color: rgba($white, 0.05);
@@ -86,22 +75,9 @@ details {
             transition: all 0.4s;
             
         }
-            
-        &:hover {
-            background-color: rgba($white, 0.1);
-        }
     }
 }
 details[open] > summary::after {
   transform: rotate(-135deg);
 }
-details > *:not(summary) {
-  animation: details-show 0.4s ease-in-out;
-  position: relative;
-  z-index: 1;
-  transition: all 0.3s ease-in-out;
-  color: transparent;
-  overflow: hidden;
-}
-details[open] > *:not(summary) { color: inherit; }
 </style>
