@@ -29,7 +29,7 @@ const skills = [
     {
         name: "Bundlers",
         info: "Kan använda mig av bundlers som t.ex Parcel, Vite, Webpack, etc. för att hjälpa mig att enkelt publicera sidor.",
-        icon: "../public/vite.svg",
+        icon: "./vite.svg",
         alt: "vite logo"
     },
     {
