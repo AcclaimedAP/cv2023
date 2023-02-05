@@ -2,31 +2,55 @@
 import skill from './skillsContainer.vue';
 
 const skills = [
-                {
-                    name: "CSS3 & SCSS",
-                    info: "Kunskap om CSS3 samt SCSS och dess funktionalitet så som funktioner, variablar, loopar, arrayer, mm.",
-                    icon: "../src/assets/img/skills/css3-svgrepo-com.svg",
-                    alt: "css3 logo"
-                },
-                {
-                    name: "Javascript",
-                    info: "Djup förståelse av språkets grunder, användsområden, funktioner, loopar, objekt, klasser, mm.",
-                    icon: "../src/assets/img/skills/javascript-logo-svgrepo-com.svg",
-                    alt: "javascript logo"
-                },
-                {
-                    name: "Typescript",
-                    info: "Lärodom om typer, strikt typ definering, övertag och säkerhet Typescript ger dig. Har använt mig det i ett flertal mindre projekt samt när jag lär mig E2E testing.",
-                    icon: "../src/assets/img/skills/typescript.svg",
-                    alt: "typescript logo"
-                },
-                {
-                    name: "Bundlers",
-                    info: "Kan använda mig av bundlers som t.ex Parcel, Vite, Webpack, etc. för att hjälpa mig att enkelt publicera sidor.",
-                    icon: "../public/vite.svg",
-                    alt: "vite logo"
-                }
-            ]
+    {
+        name: "CSS3 & SCSS",
+        info: "Kunskap om CSS3 samt SCSS och dess funktionalitet så som funktioner, variablar, loopar, arrayer, mm.",
+        icon: "../src/assets/img/skills/css3-svgrepo-com.svg",
+        alt: "css3 logo"
+    },
+    {
+        name: "Javascript",
+        info: "Djup förståelse av språkets grunder, användsområden, funktioner, loopar, objekt, klasser, mm.",
+        icon: "../src/assets/img/skills/javascript-logo-svgrepo-com.svg",
+        alt: "javascript logo"
+    },
+    {
+        name: "Typescript",
+        info: "Lärodom om typer, strikt typ definering, övertag och säkerhet Typescript ger dig.",
+        icon: "../src/assets/img/skills/typescript.svg",
+        alt: "typescript logo"
+    },
+    {
+        name: "Vue.JS",
+        info: "Använt Vue.js för denna sida. Den är ungefär min utsträckning av kunskap. Förståelse av att bygga komponenter, props, emits, funktioner, reactives, etc. för att skapa en SPA(Single page application).",
+        icon: "../src/assets/img/skills/vuejs-icon.svg",
+        alt: "Vue logo"
+    },
+    {
+        name: "Bundlers",
+        info: "Kan använda mig av bundlers som t.ex Parcel, Vite, Webpack, etc. för att hjälpa mig att enkelt publicera sidor.",
+        icon: "../public/vite.svg",
+        alt: "vite logo"
+    },
+    {
+        name: "Jest",
+        info: "Enhetstester, integrationstester, och e2e tester med hjälp av Jest",
+        icon: "../src/assets/img/skills/jest-seeklogo.com.svg",
+        alt: "Jest logo"
+    },
+    {
+        name: "React",
+        info: "Vid den tiden jag påbörjar LIA kommer jag ha studerat React, och kommer att kunna bygga en applikation från grunden.",
+        icon: "../src/assets/img/skills/react-2.svg",
+        alt: "React logo"
+    },
+    {
+        name: "React",
+        info: "Vid den tiden jag påbörjar LIA kommer jag ha studerat React, och kommer att kunna bygga en applikation från grunden.",
+        icon: "../src/assets/img/skills/react-2.svg",
+        alt: "React logo"
+    },
+]
 export default {
     components: {
         skill
@@ -60,7 +84,7 @@ export default {
     <div class="separator"></div>
     <div class="flex-child right-content">
         <h2>Mina kunskaper</h2>
-        <skill v-for="skill in sortedSkills" :name="skill.name" :info="skill.info" :icon="skill.icon" :alt="skill.alt"/>
+        <skill v-for="skill in sortedSkills" :key="skill.name" :name="skill.name" :info="skill.info" :icon="skill.icon" :alt="skill.alt"/>
     </div>
 </div>
 
