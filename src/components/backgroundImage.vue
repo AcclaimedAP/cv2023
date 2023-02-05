@@ -18,7 +18,7 @@ document.addEventListener('mousemove', followMouse);
 </template>
 <style scoped lang="scss">
 .imageContainer {
-  background-image: url('../assets/img/trees-background.jpg');
+  background-image: url('../img/trees-background.jpg');
   position: absolute;
   min-height: 100%;
   min-width: 100%;

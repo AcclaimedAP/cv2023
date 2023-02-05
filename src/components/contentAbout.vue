@@ -5,25 +5,25 @@ const skills = [
     {
         name: "CSS3 & SCSS",
         info: "Kunskap om CSS3 samt SCSS och dess funktionalitet så som funktioner, variablar, loopar, arrayer, mm.",
-        icon: "../src/assets/img/skills/css3-svgrepo-com.svg",
+        icon: "../img/skills/css3-svgrepo-com.svg",
         alt: "css3 logo"
     },
     {
         name: "Javascript",
         info: "Djup förståelse av språkets grunder, användsområden, funktioner, loopar, objekt, klasser, mm.",
-        icon: "../src/assets/img/skills/javascript-logo-svgrepo-com.svg",
+        icon: "../img/skills/javascript-logo-svgrepo-com.svg",
         alt: "javascript logo"
     },
     {
         name: "Typescript",
         info: "Lärodom om typer, strikt typ definering, övertag och säkerhet Typescript ger dig.",
-        icon: "../src/assets/img/skills/typescript.svg",
+        icon: "../img/skills/typescript.svg",
         alt: "typescript logo"
     },
     {
         name: "Vue.JS",
         info: "Använt Vue.js för denna sida. Den är ungefär min utsträckning av kunskap. Förståelse av att bygga komponenter, props, emits, funktioner, reactives, etc. för att skapa en SPA(Single page application).",
-        icon: "../src/assets/img/skills/vuejs-icon.svg",
+        icon: "../img/skills/vuejs-icon.svg",
         alt: "Vue logo"
     },
     {
@@ -35,13 +35,13 @@ const skills = [
     {
         name: "Jest",
         info: "Enhetstester, integrationstester, och e2e tester med hjälp av Jest",
-        icon: "../src/assets/img/skills/jest-seeklogo.com.svg",
+        icon: "../img/skills/jest-seeklogo.com.svg",
         alt: "Jest logo"
     },
     {
         name: "React",
         info: "Vid den tiden jag påbörjar LIA kommer jag ha studerat React, och kommer att kunna bygga en applikation från grunden.",
-        icon: "../src/assets/img/skills/react-2.svg",
+        icon: "../img/skills/react-2.svg",
         alt: "React logo"
     },
     {
