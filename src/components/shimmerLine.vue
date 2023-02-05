@@ -22,14 +22,15 @@
 
 }
 .color {
-    box-shadow: 0px 0px 5px rgba($color: $green-pastel, $alpha: 1.0);
+    box-shadow: 0px 0px 5px rgb(199, 158, 71);
     position: absolute;
     right: 0;
     transition: transform 2s ease-in-out;
     transform: translateX(-30%);
-    background-color: $green-pastel;
+    //background-color: $green-pastel;
+    background-color: rgb(199, 158, 71);
     min-width: 20%;
     height: 100%;
-    max-height: 5px;
+    max-height: 3px;
 }
 </style>

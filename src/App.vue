@@ -12,6 +12,7 @@ const state = reactive({ content: "" })
 
 
 function changeContent(cxt) {
+  const circle = document.querySelector(".circleShimmer");
   if(state.content != cxt){
     state.content = cxt;
   } else {
