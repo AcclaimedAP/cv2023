@@ -14,18 +14,18 @@ export default {
     <div class="contacts">
         <contact link="https://github.com/AcclaimedAP" 
         linktext="Github"
-        image="../img/contact/github-mark-white.svg" 
+        image="./img/contact/github-mark-white.svg" 
         imageAltText="Github Logo"/>
         <contact link="mailto:alexander.pressfelt@medieinstitutet.se" 
         linktext="E-Mail"
-        image="../img/contact/mail-white.svg" 
+        image="./img/contact/mail-white.svg" 
         imageAltText="Mail icon"/>
         <contact text="Acclaimed#5648"
-        image="../img/contact/discord-mark-white.svg" 
+        image="./img/contact/discord-mark-white.svg" 
         imageAltText="Discord logo"/>
         <contact link="https://www.linkedin.com/in/alexander-pressfelt-559754145/" 
         linktext="LinkedIn"
-        image="../img/contact/linkedin-svgrepo-com.svg" 
+        image="./img/contact/linkedin-svgrepo-com.svg" 
         imageAltText="LinkedIn Logo"/>
     </div>
 </div>
