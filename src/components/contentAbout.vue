@@ -45,10 +45,16 @@ const skills = [
         alt: "React logo"
     },
     {
-        name: "React",
-        info: "Vid den tiden jag påbörjar LIA kommer jag ha studerat React, och kommer att kunna bygga en applikation från grunden.",
-        icon: "../src/assets/img/skills/react-2.svg",
-        alt: "React logo"
+        name: "Figma",
+        info: "Använts för att designa sidor från grunden upp. Kunskap om komponenter, osv.",
+        icon: "",
+        alt: ""
+    },
+    {
+        name: "API utveckling",
+        info: "Vid den tiden jag påbörjar LIA kommer jag ha studerat om backend, så som Databaser, SQL, och NoSQL, programmering mot webbserver, databasdesign, normalisering av databaser, programstruktur för hantering av användare och användardata, etc.",
+        icon: "",
+        alt: ""
     },
 ]
 export default {
