@@ -34,15 +34,9 @@ const skills = [
     },
     {
         name: "Jest",
-        info: "Enhetstester och integrationstester med hjälp av Jest",
+        info: "Enhetstester, integrationstester, och e2e tester med hjälp av Jest",
         icon: "./img/skills/jest-seeklogo.com.svg",
         alt: "Jest logo"
-    },
-        {
-        name: "Cypress",
-        info: "E2E tester med Cypress",
-        icon: "./img/skills/370774.svg",
-        alt: "Cypress logo"
     },
     {
         name: "React",
